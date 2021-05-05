@@ -1,5 +1,11 @@
 "" plugins
 call plug#begin('~/.vim/plugged')
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'kien/rainbow_parentheses.vim'
 Plug 'christoomey/vim-tmux-navigator' 
 Plug 'SirVer/ultisnips'
 Plug 'easymotion/vim-easymotion'
@@ -28,15 +34,17 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'preservim/tagbar'
 
-
+Plug 'nathanaelkane/vim-indent-guides'
 " nerdtree
 Plug 'preservim/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
 
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 let mapleader = ","
 
 map <leader><leader> <Plug>(easymotion-prefix)
+let g:indent_guides_enable_on_vim_startup = 1
 
 
 let g:AutoPairsToggleShortcut='ooooooooo'
@@ -126,6 +134,11 @@ nnoremap <C-p><C-a> :CtrlPBufTag<cr>
 " Start NERDTree when Vim starts with a directory argument.
 set encoding=UTF-8
 
+"" slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}
+
+
 
 "" golang
 " run :GoBuild or :GoTestCompile based on the go file
@@ -185,7 +198,6 @@ set wildmenu
 set ruler
 set nu rnu
 
-set cmdheight=2
 
 
 noremap <leader>ev :tabe ~/.vimrc<cr>
@@ -224,7 +236,9 @@ set dir=~/.cache/vim
 
 set autowrite
 let g:rehash256 = 1
-colorscheme molokai
+let g:solarized_termcolors=256
+
+colorscheme solarized
 
 set updatetime=200
 
@@ -232,3 +246,35 @@ set mouse=a
 
 let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',
                           \ 'undo', 'line', 'changes', 'mixed', 'bookmarkdir']
+
+nmap <leader>: :!
+set background=dark
+
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size=1
+
+
+let g:vim_markdown_math = 1
+
+
