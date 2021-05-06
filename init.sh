@@ -40,6 +40,8 @@ fi
 case $OS in
 	Ubuntu|Debian|Mint)
 		infomsg "using apt to install packages"
+		infomsg updating apt
+		sudo apt update && sudo apt upgrade
 		INSTALL="sudo apt install -y"
 		;;
 	*)
@@ -167,4 +169,9 @@ fi
 
 
 
-
+checkinstall terraform
+checkinstall docker-compose
+checkinstall kubectl
+checkinstall kubectx
+checkinstall k9s
+checkinstall github-cli
