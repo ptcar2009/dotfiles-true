@@ -73,13 +73,12 @@ checkinstall() {
 checkinstall curl
 checkinstall git
 checkinstall zsh
-checkinstall nvim
-checkinstall helm
-checkinstall i3
+checkinstall neovim
+checkinstall i3wm
 checkinstall tmux
 
 infomsg "installing oh-my-zsh"
-curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 infomsg "installing zsh-syntax highlighter"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -93,7 +92,7 @@ mkdir ~/work
 if [ ! -f ~/.ssh/id_rsa ]
 then
 	infomsg "creating ssh key pair"
-	ssh-keygen -q -t rsa -N '' <<< ""$'\n'"y" 2>&1 >/dev/null
+	ssh-keygen -t rsa
 fi
 
 
@@ -103,13 +102,14 @@ then
 	mkdir $HOME/.config
 fi
 
+ln -s .vimrc ~/.vimrc
+ln -s .tmux.conf ~/.tmux.conf
+ln -s .zshrc ~/.zshrc
 
-infomsg "copying rc files to home directory"
-cp ./.zshrc ./.tmux.local.conf ./.tmux.conf ./.vimrc $HOME
 
-# infomsg "installing vim-plug"
-# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-# 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+infomsg "installing vim-plug"
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+ 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 infomsg "installing plugins"
 nvim +PlugInstall -c wq
@@ -157,6 +157,8 @@ then
 		"sudo apt"*)
 			infomsg installing golang from apt, probably old version, check how to change your environment
 			install golang-go
+			go get go get golang.org/dl/go1.16.3
+			sudo ln -s ~/go/bin/go1.13.3 /usr/bin/go
 			;;
 		"sudo yay"*)
 			install go
@@ -166,9 +168,6 @@ fi
 
 
 
-checkinstall terraform
 checkinstall docker-compose
-checkinstall kubectl
-checkinstall kubectx
-checkinstall k9s
 checkinstall github-cli
+checkinstall picom
