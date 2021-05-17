@@ -1,9 +1,215 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ptcar/dotfiles/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+0	.vimrc	/^map 0 ^$/;"	m
+<C-b>	.vimrc	/^  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\\<c-r>=coc#float#scroll(0)\\</;"	m
+<C-b>	.vimrc	/^  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\\<C-b>"$/;"	m
+<C-b>	.vimrc	/^  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\\<C-b>"$/;"	m
+<C-f>	.vimrc	/^  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\\<c-r>=coc#float#scroll(1)\\</;"	m
+<C-f>	.vimrc	/^  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\\<C-f>"$/;"	m
+<C-f>	.vimrc	/^  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\\<C-f>"$/;"	m
+<C-h>	.vimrc	/^map <C-h> <C-W>h$/;"	m
+<C-j>	.vimrc	/^map <C-j> <C-W>j$/;"	m
+<C-k>	.vimrc	/^map <C-k> <C-W>k$/;"	m
+<C-l>	.vimrc	/^map <C-l> <C-W>l$/;"	m
+<C-p><C-a>	.vimrc	/^nnoremap <C-p><C-a> :CtrlPBufTag<cr>$/;"	m
+<C-p><C-p>	.vimrc	/^nnoremap <C-p><C-p> :CtrlP<cr>$/;"	m
+<C-p><C-t>	.vimrc	/^nnoremap <C-p><C-t> :CtrlPTag<cr>$/;"	m
+<F8>	.vimrc	/^nmap <F8> :TagbarToggle<CR>$/;"	m
+<S-TAB>	.vimrc	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+<TAB>	.vimrc	/^inoremap <silent><expr> <TAB>$/;"	m
+<c-@>	.vimrc	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-space>	.vimrc	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	.vimrc	/^inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()$/;"	m
+<leader>:	.vimrc	/^nmap <leader>: :!$/;"	m
+<leader><leader>	.vimrc	/^map <leader><leader> <Plug>(easymotion-prefix)$/;"	m
+<leader>ev	.vimrc	/^noremap <leader>ev :tabe ~\/.vimrc<cr>$/;"	m
+<leader>n	.vimrc	/^nmap <silent> <leader>n :NERDTreeToggle<cr>$/;"	m
+<leader>sv	.vimrc	/^noremap <leader>sv :source ~\/.vimrc<cr>$/;"	m
+<leader>w	.vimrc	/^nnoremap <leader>w :w!<cr>$/;"	m
+CPU-temperature	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[CPU-temperature]$/;"	s
+Display setup with arandr	endeavouros-i3wm-setup/README.md	/^# Display setup with arandr$/;"	c
+EDITOR	.tmux.conf	/^bind e new-window -n "~\/.tmux.conf.local" "EDITOR=\\${EDITOR\/\/mvim\/vim} && EDITOR=\\${EDITOR/;"	k
+K	.vimrc	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+Logout Menu:	endeavouros-i3wm-setup/README.md	/^# Logout Menu:$/;"	c
+Main shortcuts:	endeavouros-i3wm-setup/README.md	/^# Main shortcuts:$/;"	c
+Settings	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^[Settings]$/;"	s
+Tiling:	endeavouros-i3wm-setup/README.md	/^# Tiling:$/;"	c
+Tutorial for i3-wm settings:	endeavouros-i3wm-setup/README.md	/^# Tutorial for i3-wm settings:$/;"	c
+Tutorial to install EndeavourOS-i3 setup from scratch	endeavouros-i3wm-setup/README.md	/^# Tutorial to install EndeavourOS-i3 setup from scratch $/;"	c
+Weather	endeavouros-i3wm-setup/.config/i3/scripts/openweather.conf	/^[Weather]$/;"	s
+ac	.vimrc	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	.vimrc	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+af	.vimrc	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	.vimrc	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+antialias	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-xft-antialias=1$/;"	k	section:Settings
+application menu (rofi):	endeavouros-i3wm-setup/README.md	/^# application menu (rofi):$/;"	c
+backend	endeavouros-i3wm-setup/.config/picom.conf	/^backend = "glx";$/;"	k
+bandwidth	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[bandwidth]$/;"	s
+battery	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[battery]$/;"	s
+browser	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[browser]$/;"	s
 checkinstall	init.sh	/^checkinstall() {$/;"	f
+color	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^color=#717171$/;"	k	section:simple-2
+color	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^color=#7f3fbf$/;"	k	section:files
+color	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^color=#807dfe$/;"	k	section:terminal
+color	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^color=#ff7f81$/;"	k	section:browser
+color	endeavouros-i3wm-setup/.config/i3/scripts/openweather.conf	/^color=#7275b3$/;"	k	section:Weather
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=date '+%a %d %b %H:%M:%S'$/;"	k	section:time
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=firefox$/;"	k	section:browser
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=pavucontrol$/;"	k	section:pavucontrol
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=thunar ~\/$/;"	k	section:files
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=xfce4-terminal$/;"	k	section:terminal
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/bandwidth2$/;"	k	section:bandwidth
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/battery.sh$/;"	k	section:battery
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/cpu_usage$/;"	k	section:cpu_usage
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/disk$/;"	k	section:disk
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/keyhint.sh$/;"	k	section:keybindings
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/memory$/;"	k	section:memory
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/shutdown_menu -p rofi -c;$/;"	k	section:shutdown_menu
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/temperature$/;"	k	section:CPU-temperature
+command	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^command=~\/.config\/i3\/scripts\/volume$/;"	k	section:volume-pulseaudio
+command	endeavouros-i3wm-setup/.config/i3/scripts/openweather.conf	/^command=~\/.config\/i3\/scripts\/openweather.sh$/;"	k	section:Weather
+corners	endeavouros-i3wm-setup/.config/picom.conf	/^detect-rounded-corners = true;$/;"	k
+cpu_usage	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[cpu_usage]$/;"	s
+dbe	endeavouros-i3wm-setup/.config/picom.conf	/^dbe = false;$/;"	k
+default i3-wm keycodes:	endeavouros-i3wm-setup/README.md	/^# default i3-wm keycodes: $/;"	c
+delta	endeavouros-i3wm-setup/.config/picom.conf	/^fade-delta = 4;$/;"	k
+disk	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[disk]$/;"	s
+endeavouros-i3wm-setup	endeavouros-i3wm-setup/README.md	/^# endeavouros-i3wm-setup$/;"	c
+exclude	endeavouros-i3wm-setup/.config/picom.conf	/^blur-background-exclude = [$/;"	k
+exclude	endeavouros-i3wm-setup/.config/picom.conf	/^fade-exclude = [ ];$/;"	k
+exclude	endeavouros-i3wm-setup/.config/picom.conf	/^focus-exclude = [ ];$/;"	k
+exclude	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-exclude = [$/;"	k
+fading	endeavouros-i3wm-setup/.config/picom.conf	/^fading = true;$/;"	k
+fence	endeavouros-i3wm-setup/.config/picom.conf	/^xrender-sync-fence = true;$/;"	k
+files	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[files]$/;"	s
+fixed	endeavouros-i3wm-setup/.config/picom.conf	/^blur-background-fixed = false;$/;"	k
+focused	endeavouros-i3wm-setup/.config/picom.conf	/^mark-ovredir-focused = true;$/;"	k
+focused	endeavouros-i3wm-setup/.config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
+front	endeavouros-i3wm-setup/.config/picom.conf	/^glx-copy-from-front = false;$/;"	k
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text= $/;"	k	section:files
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text= $/;"	k	section:terminal
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text= $/;"	k	section:browser
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text=: :$/;"	k	section:simple-2
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text= $/;"	k	section:shutdown_menu
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text=$/;"	k	section:pavucontrol
+full_text	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^full_text=$/;"	k	section:keybindings
+g:AutoPairsShortcutBackInsert	.vimrc	/^let g:AutoPairsShortcutBackInsert=''$/;"	v
+g:AutoPairsShortcutFastWrap	.vimrc	/^let g:AutoPairsShortcutFastWrap=''$/;"	v
+g:AutoPairsShortcutJump	.vimrc	/^let g:AutoPairsShortcutJump=''$/;"	v
+g:AutoPairsToggleShortcut	.vimrc	/^let g:AutoPairsToggleShortcut='ooooooooo'$/;"	v
+g:NERDTreeGitStatusConcealBrackets	.vimrc	/^let g:NERDTreeGitStatusConcealBrackets = 1$/;"	v
+g:airline#extensions#ale#enabled	.vimrc	/^let g:airline#extensions#ale#enabled = 1$/;"	v
+g:ale_fix_on_save	.vimrc	/^let g:ale_fix_on_save = 1$/;"	v
+g:ale_sign_column_always	.vimrc	/^let g:ale_sign_column_always = 1$/;"	v
+g:ctrlp_extensions	.vimrc	/^let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript',$/;"	v
+g:go_code_completion_enabled	.vimrc	/^let g:go_code_completion_enabled = 0$/;"	v
+g:go_debug_mappings	.vimrc	/^let g:go_debug_mappings = {$/;"	v
+g:go_debug_windows	.vimrc	/^let g:go_debug_windows = {$/;"	v
+g:go_doc_keywordprg_enabled	.vimrc	/^let g:go_doc_keywordprg_enabled = 0$/;"	v
+g:go_fmt_command	.vimrc	/^let g:go_fmt_command = "goimports"$/;"	v
+g:go_highlight_build_constraints	.vimrc	/^let g:go_highlight_build_constraints = 1$/;"	v
+g:go_highlight_extra_types	.vimrc	/^let g:go_highlight_extra_types = 1$/;"	v
+g:go_highlight_fields	.vimrc	/^let g:go_highlight_fields = 1$/;"	v
+g:go_highlight_function_calls	.vimrc	/^let g:go_highlight_function_calls = 1$/;"	v
+g:go_highlight_functions	.vimrc	/^let g:go_highlight_functions = 1$/;"	v
+g:go_highlight_operators	.vimrc	/^let g:go_highlight_operators = 1$/;"	v
+g:go_highlight_types	.vimrc	/^let g:go_highlight_types = 1$/;"	v
+g:indent_guides_enable_on_vim_startup	.vimrc	/^let g:indent_guides_enable_on_vim_startup = 1$/;"	v
+g:indent_guides_guide_size	.vimrc	/^let g:indent_guides_guide_size=1$/;"	v
+g:indent_guides_start_level	.vimrc	/^let g:indent_guides_start_level = 2$/;"	v
+g:rbpt_colorpairs	.vimrc	/^let g:rbpt_colorpairs = [$/;"	v
+g:rbpt_max	.vimrc	/^let g:rbpt_max = 16$/;"	v
+g:rehash256	.vimrc	/^let g:rehash256 = 1$/;"	v
+g:slime_default_config	.vimrc	/^let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}$/;"	v
+g:slime_target	.vimrc	/^let g:slime_target = "tmux"$/;"	v
+g:solarized_termcolors	.vimrc	/^let g:solarized_termcolors=256$/;"	v
+g:vim_markdown_math	.vimrc	/^let g:vim_markdown_math = 1$/;"	v
+gd	.vimrc	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gi	.vimrc	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gr	.vimrc	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	.vimrc	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+hinting	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-xft-hinting=1$/;"	k	section:Settings
+hintstyle	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-xft-hintstyle=hintmedium$/;"	k	section:Settings
+i3blocks:	endeavouros-i3wm-setup/README.md	/^# i3blocks:$/;"	c
+ic	.vimrc	/^omap ic <Plug>(coc-classobj-i)$/;"	m
+ic	.vimrc	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
+if	.vimrc	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+if	.vimrc	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
+images	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-button-images=0$/;"	k	section:Settings
+images	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-menu-images=0$/;"	k	section:Settings
 infomsg	init.sh	/^infomsg () {$/;"	f
 install	init.sh	/^install () {$/;"	f
+install needed apps and programms for i3wm:	endeavouros-i3wm-setup/README.md	/^# install needed apps and programms for i3wm:$/;"	c
+instance	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^instance=Master$/;"	k	section:volume-pulseaudio
+instance	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^instance=\/$/;"	k	section:disk
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=1$/;"	k	section:time
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=1$/;"	k	section:volume-pulseaudio
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=2$/;"	k	section:cpu_usage
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=2$/;"	k	section:memory
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=30$/;"	k	section:CPU-temperature
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=30$/;"	k	section:battery
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=30$/;"	k	section:disk
+interval	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^interval=persist$/;"	k	section:bandwidth
+interval	endeavouros-i3wm-setup/.config/i3/scripts/openweather.conf	/^interval=1800$/;"	k	section:Weather
+is_vim	.tmux.conf	/^is_vim="ps -o state= -o comm= -t '#{pane_tty}' \\$/;"	k
+keybindings	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[keybindings]$/;"	s
+label	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^label=$/;"	k	section:CPU-temperature
+label	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^label=   $/;"	k	section:disk
+label	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^label= $/;"	k	section:battery
+label	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^label= $/;"	k	section:cpu_usage
+label	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^label= $/;"	k	section:memory
+leader	endeavouros-i3wm-setup/.config/picom.conf	/^detect-client-leader = true;$/;"	k
+mapleader	.vimrc	/^let mapleader = ","$/;"	v
+markup	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^markup=pango$/;"	k
+memory	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[memory]$/;"	s
+name	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-cursor-theme-name=capitaine-cursors-light$/;"	k	section:Settings
+name	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-font-name=Noto Sans 11$/;"	k	section:Settings
+name	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-icon-theme-name=Arc-X-D$/;"	k	section:Settings
+name	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-theme-name=Arc-Dark$/;"	k	section:Settings
+opacity	endeavouros-i3wm-setup/.config/picom.conf	/^active-opacity = 1;$/;"	k
+opacity	endeavouros-i3wm-setup/.config/picom.conf	/^detect-client-opacity = true;$/;"	k
+opacity	endeavouros-i3wm-setup/.config/picom.conf	/^frame-opacity = 1;$/;"	k
+opacity	endeavouros-i3wm-setup/.config/picom.conf	/^inactive-opacity = 1;$/;"	k
+opacity	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-opacity = 0.5;$/;"	k
+override	endeavouros-i3wm-setup/.config/picom.conf	/^inactive-opacity-override = false;$/;"	k
+panel bar (i3-blocks):	endeavouros-i3wm-setup/README.md	/^# panel bar (i3-blocks):$/;"	c
+pavucontrol	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[pavucontrol]$/;"	s
+possible	endeavouros-i3wm-setup/.config/picom.conf	/^unredir-if-possible = false;$/;"	k
+radius	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-radius = 5;$/;"	k
+rate	endeavouros-i3wm-setup/.config/picom.conf	/^refresh-rate = 0;$/;"	k
+rgba	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-xft-rgba=rgb$/;"	k	section:Settings
+s:build_go_files	.vimrc	/^function! s:build_go_files()$/;"	f
+s:check_back_space	.vimrc	/^function! s:check_back_space() abort$/;"	f
+s:show_documentation	.vimrc	/^function! s:show_documentation()$/;"	f
+separator	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^separator=false$/;"	k
+shadow	endeavouros-i3wm-setup/.config/picom.conf	/^shadow = false;$/;"	k
+shaped	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-ignore-shaped = false;$/;"	k
+shutdown_menu	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[shutdown_menu]$/;"	s
+simple-2	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[simple-2]$/;"	s
+size	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-cursor-theme-size=14$/;"	k	section:Settings
+size	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR$/;"	k	section:Settings
+sounds	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-enable-event-sounds=1$/;"	k	section:Settings
+sounds	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-enable-input-feedback-sounds=1$/;"	k	section:Settings
+stencil	endeavouros-i3wm-setup/.config/picom.conf	/^glx-no-stencil = true;$/;"	k
+step	endeavouros-i3wm-setup/.config/picom.conf	/^fade-in-step = 0.03;$/;"	k
+step	endeavouros-i3wm-setup/.config/picom.conf	/^fade-out-step = 0.03;$/;"	k
+style	endeavouros-i3wm-setup/.config/gtk-3.0/settings.ini	/^gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ$/;"	k	section:Settings
+terminal	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[terminal]$/;"	s
+time	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[time]$/;"	s
+tmux_version	.tmux.conf	/^tmux_version='$(tmux -V | sed -En "s\/^tmux ([0-9]+(.[0-9]+)?).*\/\\1\/p")'$/;"	k
+transient	endeavouros-i3wm-setup/.config/picom.conf	/^detect-transient = true;$/;"	k
+volume-pulseaudio	endeavouros-i3wm-setup/.config/i3/i3blocks.conf	/^[volume-pulseaudio]$/;"	s
+vsync	endeavouros-i3wm-setup/.config/picom.conf	/^vsync = false;$/;"	k
+win	endeavouros-i3wm-setup/.config/picom.conf	/^use-ewmh-active-win = true;$/;"	k
+wintypes	endeavouros-i3wm-setup/.config/picom.conf	/^wintypes:$/;"	k
+x	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-offset-x = -5;$/;"	k
+y	endeavouros-i3wm-setup/.config/picom.conf	/^shadow-offset-y = -5;$/;"	k

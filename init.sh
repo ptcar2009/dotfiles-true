@@ -46,7 +46,7 @@ case $OS in
 		;;
 	*)
 		infomsg "using yay to install packages"
-		INSTALL="sudo yay -Sy"
+		INSTALL="yay -Sy"
 		;;
 esac
 
@@ -103,15 +103,13 @@ then
 	mkdir $HOME/.config
 fi
 
-infomsg "copying config files to configuration folder"
-cp -r ./i3 ./i3status $HOME/.config
 
 infomsg "copying rc files to home directory"
-cp ./.zshrc ./.tmux.conf ./.vimrc $HOME
+cp ./.zshrc ./.tmux.local.conf ./.tmux.conf ./.vimrc $HOME
 
-infomsg "installing vim-plug"
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# infomsg "installing vim-plug"
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+# 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 infomsg "installing plugins"
 nvim +PlugInstall -c wq
@@ -128,7 +126,6 @@ then
 			;;
 	esac
 	infomsg "executing docker post installation steps"
-	sudo groupadd docker
 	sudo usermod -aG docker $USER
 	newgrp docker
 fi

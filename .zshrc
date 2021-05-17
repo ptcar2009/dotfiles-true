@@ -4,11 +4,23 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ptcar/.oh-my-zsh"
 
+export PATH=$PATH:/home/ptcar/go/bin
+export FZF_DEFAULT_COMMAND="find -L"
+export DISABLE_AUTO_TITLE='true'
+alias setclip="xclip -selection c"
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+export PATH=$PATH:/home/ptcar/.local/bin
+export INPROV_PROVIDER_URL="http://inspr.com"
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESS=' -RF '
+export REVIEW_BASE=develop
+export PATH=$PATH:/home/ptcar/.cargo/bin
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="eastwood"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +82,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fzf git zsh-autosuggestions zsh-syntax-highlighting docker kubectl gcloud )
+plugins=(fzf git zsh-autosuggestions zsh-syntax-highlighting docker kubectl gcloud inspr)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,9 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=$PATH:/home/ptcar/go/bin
-export FZF_DEFAULT_COMMAND="find -L"
-export DISABLE_AUTO_TITLE='true'
-alias setclip="xclip -selection c"
-export VISUAL=nvim
-export EDITOR="$VISUAL"
+export GITHUB_TOKEN=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
+# if tmux is executable and not inside a tmux session, then try to attach.
+# if attachment fails, start a new session
+

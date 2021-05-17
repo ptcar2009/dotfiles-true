@@ -1,0 +1,15 @@
+session_name: default
+start_directory: '~'
+windows:
+- layout: main-horizontal
+  focus: true
+  options:
+    main-pane-height: 70
+  panes:
+  - shell_command:
+    - nvim .
+    focus: true
+  - pane
+  - pane
+  window_name: Editing
+- window_name: Shell
